@@ -1,0 +1,28 @@
+#iconCarousel {
+	display: flex;
+	height: 340px;
+	align-items: center;
+}
+#iconCarousel a {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.carousel-control {
+	color: black;
+	opacity: 1;
+	text-shadow: none;
+	font-size: 3em;
+}
+.carousel-control:hover {
+  color: black;
+  opacity: 0.8;
+}
+.carousel-control:focus {
+  color: black;
+  opacity: 1;
+}
+.carousel-control.left, .carousel-control.right {
+	background: none;
+}
