@@ -5,4 +5,7 @@ $(document).ready(function () {
   console.log('linked')
   // $('.name').animate({'top' : '10px'}, 2000);
   // $('.name').fadeIn('100000').removeClass('hidden');
+  $('.carousel').carousel({
+		interval: 3000
+	})
 })

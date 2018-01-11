@@ -89,11 +89,36 @@ header {
 	transition: 2s ease-in-out;
 	/*transition-delay: 2s;*/
 }
+footer {
+	background: black;
+}
 
 @keyframes scale {
 	0% {width: 0%; height: 0;}
 	100% {width: 90%; height: 260px;}
 }
+
+.carousel.vertical .item {
+  -webkit-transition: 2s ease-in-out top;
+     -moz-transition: 2s ease-in-out top;
+      -ms-transition: 2s ease-in-out top;
+       -o-transition: 2s ease-in-out top;
+          transition: 2s ease-in-out top;
+          /*height: 100%;*/
+}
+.carousel.vertical .active {
+	top: 0px;
+}
+.carousel.vertical .next {
+	top: 200px;
+}
+.carousel.vertical .prev {
+	top: -200px;
+}
+.carousel.vertical .item {
+	left: 0;
+}
+
 
 @media only screen and (max-width : 768px) {
 	.overlay {
