@@ -1,124 +1,139 @@
-#iconCarousel {
-	display: flex;
-	height: 340px;
-	align-items: center;
-}
-#iconCarousel a {
-    display: block;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.carousel-control {
-	color: black;
-	opacity: 1;
-	text-shadow: none;
-	font-size: 3em;
-}
-.carousel-control:hover {
-  color: black;
-  opacity: 0.8;
-}
-.carousel-control:focus {
-  color: black;
-  opacity: 1;
-}
-.carousel-control.left, .carousel-control.right {
-	background: none;
+
+
+
+
+.splitter {
+	width: 100%;
+	height: 50px;
 }
 
-header {
-	background: url('background.jpeg');
+section {
 	width: 100%;
 	height: 600px;
 }
 
-.overlay {
-	background: rgba(0,0,0,0.7);
-	width: 60vw;
-	height: 300px;
-	position: relative;
-	top: 40%;
+.one {
+	background: linear-gradient(
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.1)
+    ), url('blwh.jpg');
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	padding-left: 5px;
 }
-
-.lines {
-	border-left: 2px solid white;
-	border-bottom: 2px solid white;
-	width: 90%;
-	position: absolute;
-	bottom: 20px;
-	left: 20px;
-	height: 260px;
-	/*display: flex;
-	align-items: flex-end;*/
-	padding-left: 10px;
-	animation: scale 2s ease;
+.one-text {
+	padding-top: 30%;
 }
-.text {
-	position: relative;
-	top: 33%;
-	left: 8%;
-}
-.text h2, p {
+.one h1 {
+	font-family: 'Kanit', sans-serif;
+	font-size: 5em;
 	color: white;
-	font-family: 'Martel Sans', sans-serif;
+	font-weight: 800;
 }
-.text h2 {
+
+.one h3 {
 	font-size: 3em;
+	color: #FC4A1A;
+	margin-top: -45px;
+	font-weight: 600;
+}
+
+.two {
+	background: url('arc.jpg');
+	background-size: cover;
+	background-position: center center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-attachment: fixed;
+}
+
+.one p {
+	color: white;
+	padding-right: 5px;
+	font-size: 1.2em;
+font-family: 'Martel Sans', sans-serif;
+font-weight: 300;
+}
+
+.one h3 {
+	font-family: 'Kanit', sans-serif;
+}
+.two p {
+	color: white;
+	font-size: 1.4em;
+	/*padding-left: 2%;*/
+	padding-top: 5px;
+	font-family: 'Kanit', sans-serif;
+	font-weight: 400;
+}
+
+.two-content {
+	width: 90%;
+}
+
+.transparent {
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	max-height: 400px;
+	max-width: 600px;
+}
+
+.three p {
+	font-family: 'Kanit', sans-serif;
+	font-weight: 800;
+	font-size: 5em;
+	text-transform: uppercase;
+	text-align: right
+}
+
+.front-text {
+	/*z-index: 10;*/
+	/*margin-top: 0;*/
+	position: relative;
+	top: -40px;
+	padding: 0 2%;
+}
+.back-text p {
+	z-index: -10;
+	position: relative;
+	padding: 0 2%;
 	margin: 0;
-	font-weight: 300;
 }
 
-.text p {
-	font-size: 3.5em;
-	font-weight: 700;
-}
-.name {
-	/*opacity: 0;*/
-}
-/*.name {
-	transform: translateY(-20px);
-	transition: 2s ease-in-out;
-	transition-delay: 2s;
-}*/
-.hidden {
-	display: none;
-}
-.move {
-	transform: translateY(15px);
-	transition: 2s ease-in-out;
-	/*transition-delay: 2s;*/
-}
-footer {
-	background: black;
+.square-image {
+	background: linear-gradient(
+		to right bottom, rgba(255,226,0, 0.6) 50%, white 50%
+    ), url('arc.jpg');;
+	background-size: cover;
+	background-position: center center;
+	width: 100%;
+	height: 300px;
+	/*position: relative;*/
+	margin-top: -143px;
+	/*z-index: 1;*/
 }
 
-@keyframes scale {
-	0% {width: 0%; height: 0;}
-	100% {width: 90%; height: 260px;}
+.info {
+	font-size: 2em;
+	position: relative;
+	top: -180px;
+	/*color: white;*/
+	float: right;
+	width: 90%;
+	text-align: left;
 }
 
-.carousel.vertical .item {
-  -webkit-transition: 2s ease-in-out top;
-     -moz-transition: 2s ease-in-out top;
-      -ms-transition: 2s ease-in-out top;
-       -o-transition: 2s ease-in-out top;
-          transition: 2s ease-in-out top;
-          /*height: 100%;*/
+.line {
+	width: 80%;
+	background-color: black;
+	height: 3px;
+	position: relative;
+	top: 20px;
+	margin: 0 auto;
 }
-.carousel.vertical .active {
-	top: 0px;
-}
-.carousel.vertical .next {
-	top: 200px;
-}
-.carousel.vertical .prev {
-	top: -200px;
-}
-.carousel.vertical .item {
-	left: 0;
-}
-
 
 @media only screen and (max-width : 768px) {
 	.overlay {

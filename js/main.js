@@ -5,7 +5,13 @@ $(document).ready(function () {
   console.log('linked')
   // $('.name').animate({'top' : '10px'}, 2000);
   // $('.name').fadeIn('100000').removeClass('hidden');
-  $('.carousel').carousel({
-		interval: 3000
-	})
+
+  $(window).on('scroll',function(){
+    parallaxScroll();
+});
+
+function parallaxScroll(){
+    var scrolled = $(window).scrollTop();
+    $('.one-text').css('top',(0-(scrolled*.75))+'px');
+}
 })
