@@ -167,6 +167,11 @@ font-weight: 300;
 .four-bottom {
 	font-size: 2em;
 	line-height: 1;
+	font-weight: 600;
+}
+
+.mint {
+	color: rgb(4,247,202);
 }
 
 @media only screen and (max-width : 768px) {
@@ -178,7 +183,7 @@ font-weight: 300;
 
 @media only screen and (max-width : 500px) {
 	.white-bold {
-		font-size: 6em;
+		font-size: 5.8em;
 	}
 	.white-bold:last-of-type {
 		margin-top: -78px;
