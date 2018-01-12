@@ -265,6 +265,15 @@ font-weight: 300;
 	padding-top: 10px;
 }
 
+.six {
+		background: linear-gradient(
+	      rgba(0,0,0, 0),
+	      rgba(0,0,0, 0)
+	    ), url('neon.jpg');
+		background-size: cover;
+		background-position: center center;
+}
+
 @media only screen and (max-width : 768px) {
 	.overlay {
 		width: 90%;
