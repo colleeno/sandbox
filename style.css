@@ -78,7 +78,7 @@ font-weight: 300;
 
 }
 .transparent.opaque {
-	transition: 2s ease;
+	transition: 1.5s ease;
 	opacity: 1;
 }
 
@@ -88,7 +88,7 @@ font-weight: 300;
 	margin: 0 auto;
 	max-height: 400px;
 	max-width: 600px;
-	opacity: 0.7;
+	opacity: 0.3;
 }
 
 .three p {
