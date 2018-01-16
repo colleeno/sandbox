@@ -32,8 +32,13 @@ function parallaxScroll(){
       handler: function(direction) {
         console.log('Scrolled to waypoint!')
         $('.white-bold').addClass('slide')
-
-        notify('Basic waypoint triggered')
+        // console.log(direction)
+        if (direction == 'down'){
+          $('.white-bold').removeClass('slideout').addClass('slidein')
+        }
+        else {
+          $('.white-bold').removeClass('slidein').addClass('slideout')
+        }
       }
     })
   }

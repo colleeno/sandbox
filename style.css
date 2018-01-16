@@ -166,11 +166,14 @@ font-weight: 300;
 	padding: 0;
 	transform: translateX(-500px);
 }
-.slide {
+.slidein {
 	transform: translateX(0);
 }
-.white-bold.slide {
+.white-bold.slidein, .white-bold.slideout {
 	transition: 1s ease;
+}
+.slideout {
+	transform: translateX(-500px);
 }
 
 .white-bold:last-of-type {
