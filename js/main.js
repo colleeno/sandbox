@@ -43,5 +43,11 @@ function parallaxScroll(){
     })
   }
 
+  var waypointTwo = new Waypoint({
+    element: document.getElementById('waypointTwo'),
+    handler: function(direction) {
+      $('.five-bg').addClass('scale')
+     } })
+
 
 })

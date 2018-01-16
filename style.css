@@ -197,25 +197,55 @@ font-weight: 300;
 }
 
 .five {
+	/*background: linear-gradient(
+      rgba(0,0,0, 0.5),
+      rgba(0,0,0, 0.5)
+    ), url('blwh.jpg');
+	background-size: cover;
+	background-position: center center;*/
+	/*padding: 4%;*/
+	width: 100%;
+	height: 100%;
+	position: relative;
+	/*display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;*/
+	/*display: flex;
+	justify-content: center;
+	align-items: center;*/
+}
+.five-bg {
 	background: linear-gradient(
       rgba(0,0,0, 0.5),
       rgba(0,0,0, 0.5)
     ), url('blwh.jpg');
 	background-size: cover;
 	background-position: center center;
-	padding: 4%;
-	/*display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;*/
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	width: 100%;
+	height: 100%;
+	z-index: -10;
+		transition: all 1s;
+}
+.section-five {
+	overflow: hidden;
+}
+
+.section-five:hover .five-bg {
+	/*transform: scale(1.2);*/
+}
+
+.five-bg.scale {
+	transform: scale(1.2);
 }
 
 .five-content {
 	height: 380px;
-	/*border: 1px solid red;*/
+	z-index: 10;
+	position: relative;
+	top: -470px;
+	left: 5vw;
+	width: 90vw;
 }
 
 .five-text {
