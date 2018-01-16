@@ -12,7 +12,8 @@ $(document).ready(function () {
 
 function parallaxScroll(){
     var scrolled = $(window).scrollTop();
-    var faster = 0-(scrolled*.65)
+    var faster = 0-(scrolled*.25)
+    // var slower = 365-(scrolled*.25)
 
     $('.one-text').css('transform','translateY('+faster+'px)')
     if(scrolled > 172) {
@@ -22,10 +23,20 @@ function parallaxScroll(){
     else {
       $('.transparent').removeClass('opaque')
     }
+    // $('.white-bold').css('transform','translateY('+slower+'px)')
+
+    // console.log(scrolled)
+    // console.log('im' + faster)
+    var waypoint = new Waypoint({
+      element: document.getElementById('waypoint'),
+      handler: function(direction) {
+        console.log('Scrolled to waypoint!')
+        $('.white-bold').addClass('slide')
+
+        notify('Basic waypoint triggered')
+      }
+    })
+  }
 
 
-    console.log(scrolled)
-    console.log('im' + faster)
-
-}
 })

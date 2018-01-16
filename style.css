@@ -164,6 +164,13 @@ font-weight: 300;
 	color: white;
 	margin: 0;
 	padding: 0;
+	transform: translateX(-500px);
+}
+.slide {
+	transform: translateX(0);
+}
+.white-bold.slide {
+	transition: 1s ease;
 }
 
 .white-bold:last-of-type {
@@ -180,6 +187,7 @@ font-weight: 300;
 	font-weight: 600;
 	height: 85px;
 }
+
 
 .mint {
 	color: rgb(4,247,202);
