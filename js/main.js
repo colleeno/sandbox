@@ -12,7 +12,7 @@ $(document).ready(function () {
 
 function parallaxScroll(){
     var scrolled = $(window).scrollTop();
-    var faster = 0-(scrolled*.25)
+    var faster = 0-(scrolled*.45)
     // var slower = 365-(scrolled*.25)
 
     $('.one-text').css('transform','translateY('+faster+'px)')
