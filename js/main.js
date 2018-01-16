@@ -12,9 +12,20 @@ $(document).ready(function () {
 
 function parallaxScroll(){
     var scrolled = $(window).scrollTop();
-    var slower = 0-(scrolled*.65)
-    $('.one-text').css('transform','translateY('+slower+'px)')
+    var faster = 0-(scrolled*.65)
+
+    $('.one-text').css('transform','translateY('+faster+'px)')
+    if(scrolled > 172) {
+      console.log ('two')
+      $('.transparent').addClass('opaque')
+    }
+    else {
+      $('.transparent').removeClass('opaque')
+    }
+
+
     console.log(scrolled)
-    console.log('im' + slower)
+    console.log('im' + faster)
+
 }
 })
