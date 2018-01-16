@@ -12,6 +12,9 @@ $(document).ready(function () {
 
 function parallaxScroll(){
     var scrolled = $(window).scrollTop();
-    $('.one-text').css('top',(0-(scrolled*.75))+'px');
+    var slower = 0-(scrolled*.65)
+    $('.one-text').css('transform','translateY('+slower+'px)')
+    console.log(scrolled)
+    console.log('im' + slower)
 }
 })
