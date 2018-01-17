@@ -44,17 +44,38 @@ function parallaxScroll(){
     })
   }
 
-  var waypointTwo = new Waypoint({
-    element: document.getElementById('waypointTwo'),
-    handler: function(direction) {
-      if (direction == 'down') {
-        $('.five-bg').addClass('scale')
-      }
-      else {
-        $('.five-bg').removeClass('scale')
-      }
+  // var waypointTwo = new Waypoint({
+  //   element: document.getElementById('waypointTwo'),
+  //   handler: function(direction) {
+  //     if (direction == 'down') {
+  //       $('.five-bg').addClass('scale')
+  //     }
+  //     else {
+  //       $('.five-bg').removeClass('scale')
+  //     }
+  //
+  //    } })
 
-     } })
+  $('#waypoint').waypoint(function(direction) {
+        if (direction == 'down') {
+          $('.white-bold').removeClass('slideout').addClass('slidein')
+        }
+        else {
+          $('.white-bold').removeClass('slidein').addClass('slideout')
+          console.log(direction)
+        }
+      }, { offset: 100 });  
+
+     $('#waypointThree').waypoint(function(direction) {
+           if (direction == 'down') {
+             $('.five-bg').addClass('scale')
+             console.log(direction)
+           }
+           else {
+             $('.five-bg').removeClass('scale')
+             console.log(direction)
+           }
+         }, { offset: 100 });
 
 
 })
