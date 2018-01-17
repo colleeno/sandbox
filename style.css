@@ -334,13 +334,26 @@ font-weight: 300;
 		background-position: center center;
 }
 
+@media only screen and (min-width : 480px) {
+	.five-content {
+		top: -550px;
+	}
+}
+
 @media only screen and (min-width : 768px) {
 	.one-text {
 		/*padding-top: 20%;*/
 	}
+	.five-content {
+		top: -600px;
+	}
 }
 
-
+@media only screen and (min-width : 900px) {
+	.five-content {
+		top: -680px;
+	}
+}
 @media only screen and (max-width : 768px) {
 	.overlay {
 		width: 90%;

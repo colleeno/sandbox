@@ -64,7 +64,7 @@ function parallaxScroll(){
           $('.white-bold').removeClass('slidein').addClass('slideout')
           console.log(direction)
         }
-      }, { offset: 100 });  
+      }, { offset: 100 });
 
      $('#waypointThree').waypoint(function(direction) {
            if (direction == 'down') {
