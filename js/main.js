@@ -31,7 +31,7 @@ function parallaxScroll(){
       element: document.getElementById('waypoint'),
       handler: function(direction) {
         console.log('Scrolled to waypoint!')
-        $('.white-bold').addClass('slide')
+        // $('.white-bold').addClass('slide')
         // console.log(direction)
         if (direction == 'down'){
           $('.white-bold').removeClass('slideout').addClass('slidein')
@@ -39,7 +39,8 @@ function parallaxScroll(){
         else {
           $('.white-bold').removeClass('slidein').addClass('slideout')
         }
-      }
+        // offset: '-200'
+      }, offset: 200
     })
   }
 
