@@ -334,6 +334,27 @@ font-weight: 300;
 		background-position: center center;
 }
 
+.six h2, .six h3 {
+	background: rgba(0,0,0,0.7);
+	color: white;
+	display: inline-block;
+	padding: 5px 20px;
+	font-family: 'Kanit', sans-serif;
+	font-weight: 700;
+}
+.six h2 {
+	font-size: 5em;
+	margin-bottom: 0;
+}
+.six h3 {
+	font-size: 3.5em;
+}
+.six{
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
 @media only screen and (min-width : 480px) {
 	.five-content {
 		top: -550px;
