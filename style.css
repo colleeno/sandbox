@@ -348,7 +348,8 @@ font-weight: 300;
 	background-color: rgba(0,0,0,0.2);
 	position: fixed;
 	width: 100%;
-	font-family: 'Martel Sans', sans-serif;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
 	font-size: 16px;
 }
 
@@ -406,26 +407,34 @@ nav a:hover, nav a:focus {
 #home .six {
 	height: 700px;
 	min-height: 700px;
+	background: linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ), url('light.jpg');
+		background-position: center center;
+		background-size: cover;
 }
 
 #home .six-content {
 	background: rgba(0,0,0,0.7);
-	padding: 3%;
+	padding: 3% 3% 5% 5%;
 }
 
 #home .six h2 {
 	background: transparent;
-	font-family: 'Martel Sans', sans-serif;
+	font-family: 'Lato', sans-serif;
 	text-transform: uppercase;
 	font-weight: 800;
 	margin-bottom: 0;
 	line-height: 1em;
+	padding: 5px 20px 5px 0;
 }
 #home .six h3 {
 	background: transparent;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Lato', sans-serif;
 	text-transform: uppercase;
 	margin-top: 0;
+	padding: 5px 20px 5px 0;
 }
 #home .one {
 	/*margin-top: -25px;*/
@@ -441,6 +450,17 @@ nav a:hover, nav a:focus {
 	padding-bottom: 10px;
 }
 
+#home .six-line {
+	background: #FC4A1A;
+	height: 5px;
+	width: 20vw;
+	border-radius: 10px;
+}
+
+.red {
+	color: #FC4A1A;
+}
+
 .about-line {
 	width: 20%;
 	background: #FC4A1A;
@@ -450,30 +470,26 @@ nav a:hover, nav a:focus {
 	position: relative;
 }
 .about-short {
-	border-top: 50px solid rgba(0,0,0,0.9);
-	padding-top: 50px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	min-height: 400px;
 	font-size: 1.5em;
 	padding: 3% 0;
-	background: linear-gradient(
+	background: black;
+	/*background: linear-gradient(
       rgba(0, 0, 0, 0.2),
       rgba(0, 0, 0, 0.2)
-    ), url('light.jpg');
-	background-position: center center;
-	background-size: cover;
+    ), url('light.jpg');*/
+	/*background-position: center center;
+	background-size: cover;*/
 }
 .about-short p {
-	font-size: 1.6em;
+	font-size: 1.8em;
 	margin: 0;
 	text-align: center;
 	font-family: 'Open Sans', sans-serif;
 	color: white;
-	font-weight: 500;
-}
-.about-short p:last-of-type {
 	font-weight: 300;
 }
 
@@ -564,7 +580,7 @@ nav a:hover, nav a:focus {
 		 font-size: 3.2em;
 	 }
 	 #home .six h3 {
-		 font-size: 3em;
+		 font-size: 2em;
 	 }
 }
 
