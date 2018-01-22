@@ -78,4 +78,9 @@ function parallaxScroll(){
          }, { offset: 100 });
 
 
+         $('.navbar-toggle').on('click', function () {
+          $('.nav-links').toggleClass('show-nav')
+        })
+
+
 })

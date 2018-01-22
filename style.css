@@ -14,8 +14,8 @@ section {
 
 .one {
 	background: linear-gradient(
-      rgba(255, 255, 255, 0.1),
-      rgba(255, 255, 255, 0.1)
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0)
     ), url('blwh.jpg');
 	background-size: cover;
 	background-position: center center;
@@ -197,23 +197,11 @@ font-weight: 300;
 }
 
 .five {
-	/*background: linear-gradient(
-      rgba(0,0,0, 0.5),
-      rgba(0,0,0, 0.5)
-    ), url('blwh.jpg');
-	background-size: cover;
-	background-position: center center;*/
-	/*padding: 4%;*/
+
 	width: 100%;
 	height: 100%;
 	position: relative;
-	/*display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;*/
-	/*display: flex;
-	justify-content: center;
-	align-items: center;*/
+
 }
 .five-bg {
 	background: linear-gradient(
@@ -355,6 +343,140 @@ font-weight: 300;
 	justify-content: flex-start;
 }
 
+/**NAVBAR**/
+.nav-links {
+	background-color: rgba(0,0,0,0.2);
+	position: fixed;
+	width: 100%;
+	font-family: 'Martel Sans', sans-serif;
+	font-size: 16px;
+}
+
+nav ul {
+  text-align: right;
+  padding: 15px;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  padding: 0;
+	margin: 0 10px;
+	border-bottom: 1px solid transparent;
+	transition: 0.2s ease-in-out;
+}
+.nav-links li:hover, .nav-links li:focus {
+	border-bottom: 1px solid white;
+}
+.nav-links a, .nav-links a:hover, .nav-links a:focus {
+	color: white;
+	text-decoration: none;
+}
+
+nav a:hover, nav a:focus {
+  /*border-bottom: 1px solid white;*/
+	/*text-decoration: none;*/
+}
+
+.nav-selected, .secondary-color  {
+  color: white;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+#home {
+	background-color: black;
+	height: 100vh;
+}
+#home .splitter {
+	background: black;
+}
+#home .one-text h1 {
+	line-height: 0.8em;
+}
+#home .one h3 {
+	font-size: 4em;
+	margin-top: -40px;
+}
+
+#home .six {
+	height: 700px;
+	min-height: 700px;
+}
+
+#home .six-content {
+	background: rgba(0,0,0,0.7);
+	padding: 3%;
+}
+
+#home .six h2 {
+	background: transparent;
+	font-family: 'Martel Sans', sans-serif;
+	text-transform: uppercase;
+	font-weight: 800;
+	margin-bottom: 0;
+	line-height: 1em;
+}
+#home .six h3 {
+	background: transparent;
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	margin-top: 0;
+}
+#home .one {
+	/*margin-top: -25px;*/
+	z-index: -1;
+	display: flex;
+	align-items: center;
+}
+#home .one-text {
+	padding-top: 50px;
+}
+
+#home .one-text p {
+	padding-bottom: 10px;
+}
+
+.about-line {
+	width: 20%;
+	background: #FC4A1A;
+	height: 5px;
+	border-radius: 10px;
+	margin: 15px auto;
+	position: relative;
+}
+.about-short {
+	border-top: 50px solid rgba(0,0,0,0.9);
+	padding-top: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 400px;
+	font-size: 1.5em;
+	padding: 3% 0;
+	background: linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ), url('light.jpg');
+	background-position: center center;
+	background-size: cover;
+}
+.about-short p {
+	font-size: 1.6em;
+	margin: 0;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+	font-weight: 500;
+}
+.about-short p:last-of-type {
+	font-weight: 300;
+}
+
 @media only screen and (min-width : 480px) {
 	.five-content {
 		top: -550px;
@@ -380,6 +502,70 @@ font-weight: 300;
 		width: 90%;
 		top: 25%;
 	}
+	.hamburger {
+		background-color: rgba(0,0,0,0.2);
+		position: fixed;
+		width: 100%;
+		height: 50px;
+	}
+	.hamburger .icon-bar {
+		color: white;
+	}
+	.navbar-toggle {
+		background-color: rgba(0,0,0,0.2);
+		font-size: 26px;
+	}
+	.navbar-toggle .icon-bar {
+		background: white;
+		position: relative;
+		bottom: 10px;
+		left: 25px;
+	}
+	.nav-links {
+     display: none;
+     overflow: hidden;
+     position: absolute;
+		 top: 50px;
+     width: 100%;
+     background-color: rgba(255, 255, 255, 0.1);
+		 background-color: rgba(0,0,0,0.2);
+   }
+	 nav ul {
+		 padding: 0;
+	 }
+
+   nav ul li {
+     display: block;
+     text-align: center;
+     position: relative;
+     font-size: 20px;
+     padding: 10px 0;
+   }
+
+	 .nav-links li, .nav-links li:hover, .nav-links li:focus {
+		 border-bottom: 1px solid rgba(255,255,255,0.8);
+	 }
+	 .nav-links li:last-of-type {
+		 border-bottom: none;
+	 }
+
+   .hamburger {
+     display: block;
+     text-align: right;
+     font-size: 24px;
+     padding: 10px 15px 10px 10px;
+   }
+
+   .show-nav {
+     display: block;
+		 z-index: 1;
+   }
+	 #home .six h2 {
+		 font-size: 3.2em;
+	 }
+	 #home .six h3 {
+		 font-size: 3em;
+	 }
 }
 
 @media only screen and (max-width : 500px) {
