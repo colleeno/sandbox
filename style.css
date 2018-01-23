@@ -629,7 +629,7 @@ nav a:hover, nav a:focus {
 	}
 	#home .six h3 {
 		/*font-size: 1.6em;*/
-		font-size: 2.2em;
+		font-size: 2em;
 	}
 }
 @media only screen and (max-width : 400px) {
