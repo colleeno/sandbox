@@ -419,16 +419,17 @@ nav a:hover, nav a:focus {
 
 #home .six-content {
 	background: rgba(0,0,0,0.7);
+	max-width: 90vw;
 	padding: 3% 3% 5% 5%;
 }
 
 #home .six h2 {
 	background: transparent;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Kanit', sans-serif;
 	text-transform: uppercase;
 	font-weight: 800;
 	margin-bottom: 0;
-	line-height: 1em;
+	line-height: 0.9em;
 	padding: 5px 20px 5px 0;
 }
 #home .six h3 {
@@ -591,7 +592,7 @@ nav a:hover, nav a:focus {
 	 }
 
 	 #home .six h2 {
-		 font-size: 3.2em;
+		 font-size: 4em;
 	 }
 	 #home .six h3 {
 		 font-size: 1.9em;
@@ -613,5 +614,14 @@ nav a:hover, nav a:focus {
 	}
 	#home .six h3 {
 		font-size: 1.6em;
+	}
+}
+@media only screen and (max-width : 400px) {
+	#home .six-content {
+		max-width: 94vw;
+		padding: 3% 3% 5% 3%;
+	}
+	#home .six h3 {
+		font-size: 1.4em;
 	}
 }
