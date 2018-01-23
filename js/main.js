@@ -78,7 +78,7 @@ function parallaxScroll(){
          }, { offset: 100 });
 
 
-         $('.navbar-toggle').on('touchstart click', function () {
+         $('#home .toggle-bar').on('click touchstart', function () {
           $('.nav-links').toggleClass('show-nav')
         })
 
