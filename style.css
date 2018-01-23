@@ -416,7 +416,7 @@ nav a:hover, nav a:focus {
 		background: linear-gradient(
 	      rgba(0, 0, 0, 0.2),
 	      rgba(0, 0, 0, 0.2)
-	    ), url('hand-globe.jpeg');
+	    ), url('hand-globe-cut.jpg');
 		background-position: center center;
 		background-size: cover;
 }
@@ -425,7 +425,7 @@ nav a:hover, nav a:focus {
 	/*background: rgba(0,0,0,0.7);*/
 	max-width: 90vw;
 	padding: 3% 3% 5% 5%;
-	margin-top: 200px;
+	margin-top: 150px;
 }
 
 #home .six h2 {
@@ -629,7 +629,7 @@ nav a:hover, nav a:focus {
 	}
 	#home .six h3 {
 		font-size: 1.6em;
-		font-size: 2.6em;
+		font-size: 2.4em;
 	}
 }
 @media only screen and (max-width : 400px) {
