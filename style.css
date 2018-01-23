@@ -409,18 +409,23 @@ nav a:hover, nav a:focus {
 #home .six {
 	height: 700px;
 	min-height: 700px;
-	background: linear-gradient(
+	/*background: linear-gradient(
       rgba(0, 0, 0, 0.2),
       rgba(0, 0, 0, 0.2)
-    ), url('light.jpg');
+    ), url('light.jpg');*/
+		background: linear-gradient(
+	      rgba(0, 0, 0, 0.2),
+	      rgba(0, 0, 0, 0.2)
+	    ), url('hand-globe.jpeg');
 		background-position: center center;
 		background-size: cover;
 }
 
 #home .six-content {
-	background: rgba(0,0,0,0.7);
+	/*background: rgba(0,0,0,0.7);*/
 	max-width: 90vw;
 	padding: 3% 3% 5% 5%;
+	margin-top: 200px;
 }
 
 #home .six h2 {
@@ -435,7 +440,7 @@ nav a:hover, nav a:focus {
 #home .six h3 {
 	background: transparent;
 	font-family: 'Lato', sans-serif;
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 	margin-top: 0;
 	padding: 5px 20px 5px 0;
 }
@@ -604,7 +609,8 @@ nav a:hover, nav a:focus {
 		 font-size: 4em;
 	 }
 	 #home .six h3 {
-		 font-size: 1.9em;
+		 /*font-size: 1.9em;*/
+		 font-size: 2.6em;
 	 }
 	 .about-short p {
 		 font-size: 1.7em;
@@ -623,6 +629,7 @@ nav a:hover, nav a:focus {
 	}
 	#home .six h3 {
 		font-size: 1.6em;
+		font-size: 2.6em;
 	}
 }
 @media only screen and (max-width : 400px) {
@@ -631,6 +638,6 @@ nav a:hover, nav a:focus {
 		padding: 3% 3% 5% 3%;
 	}
 	#home .six h3 {
-		font-size: 1.4em;
+		/*font-size: 1.4em;*/
 	}
 }
