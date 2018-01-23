@@ -494,10 +494,6 @@ nav a:hover, nav a:focus {
 	font-weight: 300;
 }
 
-.nav-back {
-	background-color: rgba(0,0,0,0.8);
-}
-
 @media only screen and (min-width : 480px) {
 	.five-content {
 		top: -550px;
@@ -529,12 +525,14 @@ nav a:hover, nav a:focus {
 	.navbar-toggle {
 		background-color: rgba(0,0,0,0.2);
 		font-size: 26px;
-	}
-	.navbar-toggle .icon-bar {
-		background: white;
 		position: relative;
+		left: 20px;
 		bottom: 10px;
-		left: 25px;
+	}
+	#home .navbar-toggle .icon-bar {
+		background: white;
+		padding: 2px;
+		width: 26px;
 	}
 	.nav-links {
 		 display: none;
@@ -545,6 +543,10 @@ nav a:hover, nav a:focus {
 		 background-color: transparent;
 		 /*background-color: rgba(0,0,0,0.2);*/
    }
+	 .show-nav {
+	 	display: block;
+	 	/*z-index: 1;*/
+	 }
 	 nav ul {
 		 padding: 0;
 		 display: block;
@@ -579,22 +581,15 @@ nav a:hover, nav a:focus {
      text-align: right;
      font-size: 24px;
      padding: 10px 15px 10px 10px;
-		 /*background-color: rgba(0,0,0,0.2);*/
-		 position: fixed;
-		 width: 100%;
-		 height: 50px;
-   }
-	 /*.hamburger {
 		 background-color: rgba(0,0,0,0.2);
 		 position: fixed;
 		 width: 100%;
 		 height: 50px;
-	 }*/
-
-   .show-nav {
-     display: block;
-		 z-index: 1;
    }
+	 .nav-back {
+	 	background-color: black;
+	 }
+
 	 #home .six h2 {
 		 font-size: 3.2em;
 	 }
