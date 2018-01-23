@@ -494,6 +494,10 @@ nav a:hover, nav a:focus {
 	font-weight: 300;
 }
 
+.nav-back {
+	background-color: rgba(0,0,0,0.8);
+}
+
 @media only screen and (min-width : 480px) {
 	.five-content {
 		top: -550px;
@@ -519,12 +523,6 @@ nav a:hover, nav a:focus {
 		width: 90%;
 		top: 25%;
 	}
-	.hamburger {
-		background-color: rgba(0,0,0,0.2);
-		position: fixed;
-		width: 100%;
-		height: 50px;
-	}
 	.hamburger .icon-bar {
 		color: white;
 	}
@@ -539,24 +537,34 @@ nav a:hover, nav a:focus {
 		left: 25px;
 	}
 	.nav-links {
-     display: none;
+		 display: none;
      overflow: hidden;
-     position: absolute;
-		 top: 45px;
+     position: relative;
+		 /*top: 45px;*/
      width: 100%;
 		 background-color: transparent;
 		 /*background-color: rgba(0,0,0,0.2);*/
    }
 	 nav ul {
 		 padding: 0;
+		 display: block;
+		 position: fixed;
+		 top: 50px;
+		 left: 0;
+		 background: rgba(0,0,0,0.8);
+		 z-index: 10;
+		 width: 100%;
+		 margin: 0 auto;
 	 }
 
-   nav ul li {
+   .nav-links ul li {
      display: block;
      text-align: center;
-     position: relative;
+		 top: 100px;
+		 width: 100%;
      font-size: 20px;
      padding: 10px 0;
+		 margin: 0;
    }
 
 	 .nav-links li, .nav-links li:hover, .nav-links li:focus {
@@ -571,7 +579,17 @@ nav a:hover, nav a:focus {
      text-align: right;
      font-size: 24px;
      padding: 10px 15px 10px 10px;
+		 /*background-color: rgba(0,0,0,0.2);*/
+		 position: fixed;
+		 width: 100%;
+		 height: 50px;
    }
+	 /*.hamburger {
+		 background-color: rgba(0,0,0,0.2);
+		 position: fixed;
+		 width: 100%;
+		 height: 50px;
+	 }*/
 
    .show-nav {
      display: block;
@@ -581,14 +599,14 @@ nav a:hover, nav a:focus {
 		 font-size: 3.2em;
 	 }
 	 #home .six h3 {
-		 font-size: 2em;
+		 font-size: 1.9em;
 	 }
 	 .about-short p {
 		 font-size: 1.7em;
 	 }
 }
 
-@media only screen and (max-width : 500px) {
+@media only screen and (max-width : 480px) {
 	.white-bold {
 		font-size: 5.8em;
 	}
@@ -597,5 +615,8 @@ nav a:hover, nav a:focus {
 	}
 	.rectangle {
 		top: 80px;
+	}
+	#home .six h3 {
+		font-size: 1.6em;
 	}
 }
